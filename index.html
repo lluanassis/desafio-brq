@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJOGO</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>OJOGO</legend>
+            <div>
+                <img src="image 1.png" alt="">
+                <div id="form" action="/" method="GET">
+                    <label>Nick:</label>
+                    <br>
+                    <input type="text" name="name" id="nome_usuario">
+                    <br>
+                    <label for="opcoes">Intervalo:</label>
+                    <br>
+                    <select id="opcoes">
+                        <option value="0">Opção 1: 1 a 10</option>
+                        <option value="1">Opção 2: 1 a 100</option>
+                        <option value="2">Opção 3: 1 a 1000</option>
+                    </select>
+                    <br>
+                    <button class="botao1" type="button" onclick="exibirTexto()">COMEÇAR</button>
+                </div>
+            </div>
+            <div>
+                <p id="introducao"></p>
+    
+                <label for="jogar">Digite um número:</label>
+                <br>
+                <input type="text" id="jogar" value="">
+                <br>
+                <button class="botao2" id="btn1">JOGAR</button>
+    
+                <p id="resultado"></p>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

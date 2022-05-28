@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Squada+One&display=swap');
+
+fieldset{
+    margin: 50px 250px;
+    padding: 50px 50px;
+    border-radius: 25px;
+}
+
+legend{
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 74px;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+}
+
+label{
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+input, select{
+    width: 250px;
+    height: 25px;
+    left: 257px;
+    top: 525px;
+    border: 3px solid #B0A3A3;
+    border-radius: 5px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+}
+
+
+button{
+    margin-top: 45px;
+    color: white;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    width: 150px;
+    height: 30px;
+    left: 868px;
+    top: 618px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+
+.botao1{
+    background: #1180E6;
+}
+
+.botao2{
+    background: #F2890D;
+}
