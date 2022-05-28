@@ -43,9 +43,17 @@ btn1.onclick = (event) => {
     document.getElementById("resultado").innerHTML = "Parabéns, você conseguiu adivinhar!";
   } else if (palpite_correto > palpite_usuario) {
     numero_tentativa--;
-    document.getElementById("resultado").innerHTML = "<strong>O número é maior!</strong><br/> Você ainda tem " + numero_tentativa + " tentativas.";
+    if (numero_tentativa == 1){
+      document.getElementById("resultado").innerHTML = "<strong>O número é maior!</strong><br/> Você ainda tem 1 tentativa.";
+    } else{
+      document.getElementById("resultado").innerHTML = "<strong>O número é maior!</strong><br/> Você ainda tem 2 tentativas.";
+    }
   } else if (palpite_correto < palpite_usuario) {
     numero_tentativa--;
-    document.getElementById("resultado").innerHTML = "<strong>O número é menor!</strong><br/> Você ainda tem " + numero_tentativa + " tentativas.";
+    if (numero_tentativa == 1){
+      document.getElementById("resultado").innerHTML = "<strong>O número é menor!</strong><br/> Você ainda tem 1 tentativa.";
+    } else{
+      document.getElementById("resultado").innerHTML = "<strong>O número é menor!</strong><br/> Você ainda tem 2 tentativas.";
+    }
   }
 };
