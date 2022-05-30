@@ -2,8 +2,8 @@ const opcao = document.querySelector("#opcoes");
 
 function exibirTexto() {
   let nome = document.getElementById("nome_usuario").value;
-  document.getElementById("introducao").innerHTML = `Olá <strong>${nome}</strong>, vamos jogar!
-  De acordo com a opção de intervalo que 
+  document.getElementById("introducao").innerHTML = `Olá <strong>${nome}</strong>, vamos jogar! 
+  De acordo com a opção de intervalo que<br> 
   você escolheu, descubra o número.`;
   event.preventDefault();
 
@@ -45,15 +45,19 @@ btn1.onclick = (event) => {
     numero_tentativa--;
     if (numero_tentativa == 1){
       document.getElementById("resultado").innerHTML = "<strong>O número é maior!</strong><br/> Você ainda tem 1 tentativa.";
-    } else{
+    } else if (numero_tentativa == 2){
       document.getElementById("resultado").innerHTML = "<strong>O número é maior!</strong><br/> Você ainda tem 2 tentativas.";
+    } else{
+      document.getElementById("resultado").innerHTML = "Fim de jogo.";
     }
   } else if (palpite_correto < palpite_usuario) {
     numero_tentativa--;
     if (numero_tentativa == 1){
       document.getElementById("resultado").innerHTML = "<strong>O número é menor!</strong><br/> Você ainda tem 1 tentativa.";
-    } else{
+    } else if (numero_tentativa == 2){
       document.getElementById("resultado").innerHTML = "<strong>O número é menor!</strong><br/> Você ainda tem 2 tentativas.";
+    } else{
+      document.getElementById("resultado").innerHTML = "Fim de jogo.";
     }
   }
 };

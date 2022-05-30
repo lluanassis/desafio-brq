@@ -12,9 +12,9 @@
     <form>
         <fieldset>
             <legend>OJOGO</legend>
-            <div>
-                <img src="image 1.png" alt="">
+            <div class="box">
                 <div id="form" action="/" method="GET">
+                    <img src="image 1.png" alt="">
                     <label>Nick:</label>
                     <br>
                     <input type="text" name="name" id="nome_usuario">
@@ -29,17 +29,22 @@
                     <br>
                     <button class="botao1" type="button" onclick="exibirTexto()">COMEÇAR</button>
                 </div>
-            </div>
-            <div>
-                <p id="introducao"></p>
-    
-                <label for="jogar">Digite um número:</label>
-                <br>
-                <input type="text" id="jogar" value="">
-                <br>
-                <button class="botao2" id="btn1">JOGAR</button>
-    
-                <p id="resultado"></p>
+
+                <div class="line"></div>
+
+                <div id="form" action="/" method="GET">
+                    
+                    <p id="introducao"></p>
+                    
+                    <label for="jogar">Digite um número:</label>
+                    <br>
+                    <input type="text" id="jogar" value="">
+                    <br>
+                    <button class="botao2" id="btn1">JOGAR</button>
+        
+                    <p id="resultado"></p>
+
+                </div>
             </div>
         </fieldset>
     </form>
