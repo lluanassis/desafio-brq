@@ -61,7 +61,7 @@ p{
     font-size: 18px;
     line-height: 29px;
     text-align: center;
-    width: 300px;
+    width: 260px;
     /* margin: 0 25%;
     flex-wrap: wrap; */
 }
@@ -116,7 +116,7 @@ button{
 }
 
 
-@media (min-width: 935px){
+@media (min-width: 990px){
     .line {
         position: absolute;
         left: 49%;
@@ -129,20 +129,20 @@ button{
 }
 
 
-@media (min-width: 375px){
+@media (max-width: 500px){
     fieldset {
-        margin: 50px 10%;
-        padding: 0px 0px;
+        margin: 5% 10%;
         border-radius: 25px;
         background-color: #fff;
         border: none;
     }
 
     div#form {
-        padding: 30px 15px;
+        padding: 30px 50%;
     }
 
     p#introducao{
         padding: 0px;
     }
+
 }

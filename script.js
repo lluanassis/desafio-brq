@@ -16,15 +16,15 @@ function exibirTexto() {
   if (funcao == 0) {
     palpite_correto = Math.floor(aleatorio * 10 + 1);
     console.log("Palpite correto: " + palpite_correto);
-    console.log("-----------------------------------");
+    console.log("--------------");
   } else if (funcao == 1) {
     palpite_correto = Math.floor(aleatorio * 100 + 1);
     console.log("Palpite correto: " + palpite_correto);
-    console.log("-----------------------------------");
+    console.log("---------------");
   } else if (funcao == 2) {
     palpite_correto = Math.floor(aleatorio * 1000 + 1);
     console.log("Palpite correto: " + palpite_correto);
-    console.log("-----------------------------------");
+    console.log("---------------");
   }
 }
 
@@ -48,7 +48,7 @@ btn1.onclick = (event) => {
     } else if (numero_tentativa == 2){
       document.getElementById("resultado").innerHTML = "<strong>O número é maior!</strong><br/> Você ainda tem 2 tentativas.";
     } else{
-      document.getElementById("resultado").innerHTML = "Fim de jogo.";
+      document.getElementById("resultado").innerHTML = "<strong>Você perdeu!</strong><br> Fim de jogo.";
     }
   } else if (palpite_correto < palpite_usuario) {
     numero_tentativa--;
@@ -57,7 +57,7 @@ btn1.onclick = (event) => {
     } else if (numero_tentativa == 2){
       document.getElementById("resultado").innerHTML = "<strong>O número é menor!</strong><br/> Você ainda tem 2 tentativas.";
     } else{
-      document.getElementById("resultado").innerHTML = "Fim de jogo.";
+      document.getElementById("resultado").innerHTML = "<strong>Você perdeu!</strong><br> Fim de jogo.";
     }
   }
 };
