@@ -29,6 +29,20 @@ legend{
     border-radius: 20px;
 }
 
+.quadrado {
+    animation: go-back 2s;
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+} 
+  
+
 img {
     width: 150px;
     padding: 0 15%;
@@ -99,13 +113,26 @@ button{
     margin: 25px 15%;
 }
 
+
+button:active {
+  transform: translateY(4px);
+}
+
 .botao1{
     background: #1180E6;
+}
+
+.botao1:hover{
+    background-color: #1561a8;
 }
 
 .botao2{
     background: #F2890D;
     margin-bottom: 15px;
+}
+
+.botao2:hover{
+    background-color: #da7a0c;
 }
 
 .box{

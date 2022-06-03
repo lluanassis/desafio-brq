@@ -22,7 +22,7 @@ function exibirTexto() {
     console.log("Palpite correto: " + palpite_correto);
     console.log("---------------");
   } else if (funcao == 2) {
-    palpite_correto = Math.floor(aleatorio * 1000 + 1);
+    palpite_correto = Math.floor(aleatorio * 200 + 1);
     console.log("Palpite correto: " + palpite_correto);
     console.log("---------------");
   }
